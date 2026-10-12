@@ -1,0 +1,14 @@
+__pycache__/
+*.egg-info/
+.venv/
+assets/
+cache/
+*.pcap
+*.pth
+*.model
+*.tar
+*.mp4
+*.db
+*.log
+results/*/packet_trace.jsonl
+*.joblib

@@ -1,0 +1,18 @@
+{
+  "source_sha256": "ebab71b26c4387ce7eee435234075ba1d92f9b3222f8ccf927e56f9ee2234853",
+  "unsupported": {
+    "5qi_7": [
+      "loss_correlation_pct",
+      "reorder_pct"
+    ],
+    "congested": [
+      "loss_correlation_pct",
+      "reorder_pct",
+      "duplicate_pct",
+      "delay_distribution"
+    ]
+  },
+  "direction": "one-way",
+  "deadline_ms": 100,
+  "note": "Virtual emulator differs from tc-netem; unsupported profiles explicitly excluded"
+}

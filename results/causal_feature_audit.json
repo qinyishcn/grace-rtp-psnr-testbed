@@ -1,0 +1,18 @@
+[
+  {
+    "dataset": "pilot_q1",
+    "rows": 5544,
+    "label_mask_sha256": "5b089c640600436152322467a9ae93e4b6a5b9955e77e7ddb7491a271ebe84bc",
+    "labels_unchanged": true,
+    "observation": "frame deadline",
+    "fps": 30
+  },
+  {
+    "dataset": "pilot_q2",
+    "rows": 5544,
+    "label_mask_sha256": "9177fd93cfa435633c79c82e23a36a074c15c55f778cce9e977c63959eed98ef",
+    "labels_unchanged": true,
+    "observation": "frame deadline",
+    "fps": 30
+  }
+]

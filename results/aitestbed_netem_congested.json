@@ -1,0 +1,950 @@
+{
+  "events": [
+    {
+      "frame_id": 1,
+      "sequence": 1,
+      "arrival_ms": 201.54096900000695,
+      "size": 1116
+    },
+    {
+      "frame_id": 1,
+      "sequence": 9,
+      "arrival_ms": 202.3716759999843,
+      "size": 1132
+    },
+    {
+      "frame_id": 1,
+      "sequence": 8,
+      "arrival_ms": 207.57042000002457,
+      "size": 1142
+    },
+    {
+      "frame_id": 1,
+      "sequence": 5,
+      "arrival_ms": 217.29210000000876,
+      "size": 1128
+    },
+    {
+      "frame_id": 1,
+      "sequence": 6,
+      "arrival_ms": 226.7520279999644,
+      "size": 1109
+    },
+    {
+      "frame_id": 1,
+      "sequence": 0,
+      "arrival_ms": 236.05580599996756,
+      "size": 1119
+    },
+    {
+      "frame_id": 1,
+      "sequence": 3,
+      "arrival_ms": 245.43030799998178,
+      "size": 1115
+    },
+    {
+      "frame_id": 1,
+      "sequence": 4,
+      "arrival_ms": 254.8819060000369,
+      "size": 1120
+    },
+    {
+      "frame_id": 2,
+      "sequence": 12,
+      "arrival_ms": 264.31972399996084,
+      "size": 1112
+    },
+    {
+      "frame_id": 2,
+      "sequence": 11,
+      "arrival_ms": 273.62881800002015,
+      "size": 1117
+    },
+    {
+      "frame_id": 1,
+      "sequence": 2,
+      "arrival_ms": 283.0808649999881,
+      "size": 1108
+    },
+    {
+      "frame_id": 2,
+      "sequence": 15,
+      "arrival_ms": 292.41730699993695,
+      "size": 1133
+    },
+    {
+      "frame_id": 2,
+      "sequence": 13,
+      "arrival_ms": 301.93862800001625,
+      "size": 1123
+    },
+    {
+      "frame_id": 2,
+      "sequence": 18,
+      "arrival_ms": 311.31978899998103,
+      "size": 1130
+    },
+    {
+      "frame_id": 2,
+      "sequence": 16,
+      "arrival_ms": 320.89728099992954,
+      "size": 1129
+    },
+    {
+      "frame_id": 2,
+      "sequence": 17,
+      "arrival_ms": 330.3133690000095,
+      "size": 1142
+    },
+    {
+      "frame_id": 3,
+      "sequence": 23,
+      "arrival_ms": 339.94858699998076,
+      "size": 1070
+    },
+    {
+      "frame_id": 3,
+      "sequence": 29,
+      "arrival_ms": 348.8693040000044,
+      "size": 1040
+    },
+    {
+      "frame_id": 3,
+      "sequence": 21,
+      "arrival_ms": 357.76408999993237,
+      "size": 1031
+    },
+    {
+      "frame_id": 3,
+      "sequence": 25,
+      "arrival_ms": 366.4576339999712,
+      "size": 1070
+    },
+    {
+      "frame_id": 3,
+      "sequence": 26,
+      "arrival_ms": 375.50301999999647,
+      "size": 1049
+    },
+    {
+      "frame_id": 3,
+      "sequence": 27,
+      "arrival_ms": 384.4024750000017,
+      "size": 1049
+    },
+    {
+      "frame_id": 2,
+      "sequence": 19,
+      "arrival_ms": 393.2084230000328,
+      "size": 1158
+    },
+    {
+      "frame_id": 1,
+      "sequence": 7,
+      "arrival_ms": 402.93831199994656,
+      "size": 1151
+    },
+    {
+      "frame_id": 3,
+      "sequence": 22,
+      "arrival_ms": 412.5884259999566,
+      "size": 1025
+    },
+    {
+      "frame_id": 3,
+      "sequence": 20,
+      "arrival_ms": 421.29972800000814,
+      "size": 1052
+    },
+    {
+      "frame_id": 4,
+      "sequence": 36,
+      "arrival_ms": 430.17389399994954,
+      "size": 1172
+    },
+    {
+      "frame_id": 4,
+      "sequence": 35,
+      "arrival_ms": 440.033609000011,
+      "size": 1187
+    },
+    {
+      "frame_id": 3,
+      "sequence": 24,
+      "arrival_ms": 449.9878799999806,
+      "size": 1047
+    },
+    {
+      "frame_id": 4,
+      "sequence": 32,
+      "arrival_ms": 458.81322000002456,
+      "size": 1160
+    },
+    {
+      "frame_id": 4,
+      "sequence": 33,
+      "arrival_ms": 468.5352669999929,
+      "size": 1181
+    },
+    {
+      "frame_id": 4,
+      "sequence": 31,
+      "arrival_ms": 478.37314599996716,
+      "size": 1159
+    },
+    {
+      "frame_id": 4,
+      "sequence": 37,
+      "arrival_ms": 496.05419599993184,
+      "size": 1162
+    }
+  ],
+  "scheduled_packets": 84,
+  "rtp_received": 33,
+  "iframe_sha256": "d6236a7580b985b9894083a38f67030a556a74a394d009fecf78b5045268e11e",
+  "iframe_verified": true,
+  "left_state": "connected",
+  "right_state": "connected",
+  "nack": false,
+  "rtx": false,
+  "transport": "aiortc ICE/DTLS/SRTP through original Testbed netemu in isolated Linux network namespace",
+  "trace": [
+    {
+      "frame_id": 1,
+      "packet_index": 0,
+      "send_ms": 33.333333333333336,
+      "size": 1147,
+      "arrival_ms": 33.333333333333336,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 1,
+      "packet_index": 1,
+      "send_ms": 33.333333333333336,
+      "size": 1144,
+      "arrival_ms": 33.333333333333336,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 1,
+      "packet_index": 2,
+      "send_ms": 33.333333333333336,
+      "size": 1136,
+      "arrival_ms": 33.333333333333336,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 1,
+      "packet_index": 3,
+      "send_ms": 33.333333333333336,
+      "size": 1143,
+      "arrival_ms": 33.333333333333336,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 1,
+      "packet_index": 4,
+      "send_ms": 33.333333333333336,
+      "size": 1148,
+      "arrival_ms": 33.333333333333336,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 1,
+      "packet_index": 5,
+      "send_ms": 33.333333333333336,
+      "size": 1156,
+      "arrival_ms": 33.333333333333336,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 1,
+      "packet_index": 6,
+      "send_ms": 33.333333333333336,
+      "size": 1137,
+      "arrival_ms": 33.333333333333336,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 1,
+      "packet_index": 7,
+      "send_ms": 33.333333333333336,
+      "size": 1179,
+      "arrival_ms": 33.333333333333336,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 1,
+      "packet_index": 8,
+      "send_ms": 33.333333333333336,
+      "size": 1170,
+      "arrival_ms": 33.333333333333336,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 1,
+      "packet_index": 9,
+      "send_ms": 33.333333333333336,
+      "size": 1160,
+      "arrival_ms": 33.333333333333336,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 2,
+      "packet_index": 0,
+      "send_ms": 66.66666666666667,
+      "size": 1167,
+      "arrival_ms": 66.66666666666667,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 2,
+      "packet_index": 1,
+      "send_ms": 66.66666666666667,
+      "size": 1145,
+      "arrival_ms": 66.66666666666667,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 2,
+      "packet_index": 2,
+      "send_ms": 66.66666666666667,
+      "size": 1140,
+      "arrival_ms": 66.66666666666667,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 2,
+      "packet_index": 3,
+      "send_ms": 66.66666666666667,
+      "size": 1151,
+      "arrival_ms": 66.66666666666667,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 2,
+      "packet_index": 4,
+      "send_ms": 66.66666666666667,
+      "size": 1166,
+      "arrival_ms": 66.66666666666667,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 2,
+      "packet_index": 5,
+      "send_ms": 66.66666666666667,
+      "size": 1161,
+      "arrival_ms": 66.66666666666667,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 2,
+      "packet_index": 6,
+      "send_ms": 66.66666666666667,
+      "size": 1157,
+      "arrival_ms": 66.66666666666667,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 2,
+      "packet_index": 7,
+      "send_ms": 66.66666666666667,
+      "size": 1170,
+      "arrival_ms": 66.66666666666667,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 2,
+      "packet_index": 8,
+      "send_ms": 66.66666666666667,
+      "size": 1158,
+      "arrival_ms": 66.66666666666667,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 2,
+      "packet_index": 9,
+      "send_ms": 66.66666666666667,
+      "size": 1186,
+      "arrival_ms": 66.66666666666667,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 3,
+      "packet_index": 0,
+      "send_ms": 100.0,
+      "size": 1080,
+      "arrival_ms": 100.0,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 3,
+      "packet_index": 1,
+      "send_ms": 100.0,
+      "size": 1059,
+      "arrival_ms": 100.0,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 3,
+      "packet_index": 2,
+      "send_ms": 100.0,
+      "size": 1053,
+      "arrival_ms": 100.0,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 3,
+      "packet_index": 3,
+      "send_ms": 100.0,
+      "size": 1098,
+      "arrival_ms": 100.0,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 3,
+      "packet_index": 4,
+      "send_ms": 100.0,
+      "size": 1075,
+      "arrival_ms": 100.0,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 3,
+      "packet_index": 5,
+      "send_ms": 100.0,
+      "size": 1098,
+      "arrival_ms": 100.0,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 3,
+      "packet_index": 6,
+      "send_ms": 100.0,
+      "size": 1077,
+      "arrival_ms": 100.0,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 3,
+      "packet_index": 7,
+      "send_ms": 100.0,
+      "size": 1077,
+      "arrival_ms": 100.0,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 3,
+      "packet_index": 8,
+      "send_ms": 100.0,
+      "size": 1045,
+      "arrival_ms": 100.0,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 3,
+      "packet_index": 9,
+      "send_ms": 100.0,
+      "size": 1068,
+      "arrival_ms": 100.0,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 4,
+      "packet_index": 0,
+      "send_ms": 133.33333333333334,
+      "size": 1202,
+      "arrival_ms": 133.33333333333334,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 4,
+      "packet_index": 1,
+      "send_ms": 133.33333333333334,
+      "size": 1187,
+      "arrival_ms": 133.33333333333334,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 4,
+      "packet_index": 2,
+      "send_ms": 133.33333333333334,
+      "size": 1188,
+      "arrival_ms": 133.33333333333334,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 4,
+      "packet_index": 3,
+      "send_ms": 133.33333333333334,
+      "size": 1209,
+      "arrival_ms": 133.33333333333334,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 4,
+      "packet_index": 4,
+      "send_ms": 133.33333333333334,
+      "size": 1179,
+      "arrival_ms": 133.33333333333334,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 4,
+      "packet_index": 5,
+      "send_ms": 133.33333333333334,
+      "size": 1215,
+      "arrival_ms": 133.33333333333334,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 4,
+      "packet_index": 6,
+      "send_ms": 133.33333333333334,
+      "size": 1200,
+      "arrival_ms": 133.33333333333334,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 4,
+      "packet_index": 7,
+      "send_ms": 133.33333333333334,
+      "size": 1190,
+      "arrival_ms": 133.33333333333334,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 4,
+      "packet_index": 8,
+      "send_ms": 133.33333333333334,
+      "size": 1164,
+      "arrival_ms": 133.33333333333334,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 4,
+      "packet_index": 9,
+      "send_ms": 133.33333333333334,
+      "size": 1188,
+      "arrival_ms": 133.33333333333334,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 5,
+      "packet_index": 0,
+      "send_ms": 166.66666666666666,
+      "size": 1225,
+      "arrival_ms": 166.66666666666666,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 5,
+      "packet_index": 1,
+      "send_ms": 166.66666666666666,
+      "size": 1197,
+      "arrival_ms": 166.66666666666666,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 5,
+      "packet_index": 2,
+      "send_ms": 166.66666666666666,
+      "size": 1174,
+      "arrival_ms": 166.66666666666666,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 5,
+      "packet_index": 3,
+      "send_ms": 166.66666666666666,
+      "size": 1195,
+      "arrival_ms": 166.66666666666666,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 5,
+      "packet_index": 4,
+      "send_ms": 166.66666666666666,
+      "size": 1209,
+      "arrival_ms": 166.66666666666666,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 5,
+      "packet_index": 5,
+      "send_ms": 166.66666666666666,
+      "size": 1194,
+      "arrival_ms": 166.66666666666666,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 5,
+      "packet_index": 6,
+      "send_ms": 166.66666666666666,
+      "size": 1192,
+      "arrival_ms": 166.66666666666666,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 5,
+      "packet_index": 7,
+      "send_ms": 166.66666666666666,
+      "size": 1190,
+      "arrival_ms": 166.66666666666666,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 5,
+      "packet_index": 8,
+      "send_ms": 166.66666666666666,
+      "size": 1167,
+      "arrival_ms": 166.66666666666666,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 5,
+      "packet_index": 9,
+      "send_ms": 166.66666666666666,
+      "size": 1206,
+      "arrival_ms": 166.66666666666666,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 6,
+      "packet_index": 0,
+      "send_ms": 200.0,
+      "size": 1228,
+      "arrival_ms": 200.0,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 6,
+      "packet_index": 1,
+      "send_ms": 200.0,
+      "size": 57,
+      "arrival_ms": 200.0,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 6,
+      "packet_index": 2,
+      "send_ms": 200.0,
+      "size": 1228,
+      "arrival_ms": 200.0,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 6,
+      "packet_index": 3,
+      "send_ms": 200.0,
+      "size": 62,
+      "arrival_ms": 200.0,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 6,
+      "packet_index": 4,
+      "send_ms": 200.0,
+      "size": 1228,
+      "arrival_ms": 200.0,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 6,
+      "packet_index": 5,
+      "send_ms": 200.0,
+      "size": 65,
+      "arrival_ms": 200.0,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 6,
+      "packet_index": 6,
+      "send_ms": 200.0,
+      "size": 1223,
+      "arrival_ms": 200.0,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 6,
+      "packet_index": 7,
+      "send_ms": 200.0,
+      "size": 1228,
+      "arrival_ms": 200.0,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 6,
+      "packet_index": 8,
+      "send_ms": 200.0,
+      "size": 87,
+      "arrival_ms": 200.0,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 6,
+      "packet_index": 9,
+      "send_ms": 200.0,
+      "size": 1211,
+      "arrival_ms": 200.0,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 6,
+      "packet_index": 10,
+      "send_ms": 200.0,
+      "size": 1228,
+      "arrival_ms": 200.0,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 6,
+      "packet_index": 11,
+      "send_ms": 200.0,
+      "size": 70,
+      "arrival_ms": 200.0,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 6,
+      "packet_index": 12,
+      "send_ms": 200.0,
+      "size": 1172,
+      "arrival_ms": 200.0,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 6,
+      "packet_index": 13,
+      "send_ms": 200.0,
+      "size": 1210,
+      "arrival_ms": 200.0,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 6,
+      "packet_index": 14,
+      "send_ms": 200.0,
+      "size": 1226,
+      "arrival_ms": 200.0,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 7,
+      "packet_index": 0,
+      "send_ms": 233.33333333333334,
+      "size": 1228,
+      "arrival_ms": 233.33333333333334,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 7,
+      "packet_index": 1,
+      "send_ms": 233.33333333333334,
+      "size": 69,
+      "arrival_ms": 233.33333333333334,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 7,
+      "packet_index": 2,
+      "send_ms": 233.33333333333334,
+      "size": 1228,
+      "arrival_ms": 233.33333333333334,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 7,
+      "packet_index": 3,
+      "send_ms": 233.33333333333334,
+      "size": 78,
+      "arrival_ms": 233.33333333333334,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 7,
+      "packet_index": 4,
+      "send_ms": 233.33333333333334,
+      "size": 1228,
+      "arrival_ms": 233.33333333333334,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 7,
+      "packet_index": 5,
+      "send_ms": 233.33333333333334,
+      "size": 88,
+      "arrival_ms": 233.33333333333334,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 7,
+      "packet_index": 6,
+      "send_ms": 233.33333333333334,
+      "size": 1228,
+      "arrival_ms": 233.33333333333334,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 7,
+      "packet_index": 7,
+      "send_ms": 233.33333333333334,
+      "size": 63,
+      "arrival_ms": 233.33333333333334,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 7,
+      "packet_index": 8,
+      "send_ms": 233.33333333333334,
+      "size": 1228,
+      "arrival_ms": 233.33333333333334,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 7,
+      "packet_index": 9,
+      "send_ms": 233.33333333333334,
+      "size": 88,
+      "arrival_ms": 233.33333333333334,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 7,
+      "packet_index": 10,
+      "send_ms": 233.33333333333334,
+      "size": 1228,
+      "arrival_ms": 233.33333333333334,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 7,
+      "packet_index": 11,
+      "send_ms": 233.33333333333334,
+      "size": 77,
+      "arrival_ms": 233.33333333333334,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 7,
+      "packet_index": 12,
+      "send_ms": 233.33333333333334,
+      "size": 1228,
+      "arrival_ms": 233.33333333333334,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 7,
+      "packet_index": 13,
+      "send_ms": 233.33333333333334,
+      "size": 82,
+      "arrival_ms": 233.33333333333334,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 7,
+      "packet_index": 14,
+      "send_ms": 233.33333333333334,
+      "size": 1228,
+      "arrival_ms": 233.33333333333334,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 7,
+      "packet_index": 15,
+      "send_ms": 233.33333333333334,
+      "size": 84,
+      "arrival_ms": 233.33333333333334,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 7,
+      "packet_index": 16,
+      "send_ms": 233.33333333333334,
+      "size": 1212,
+      "arrival_ms": 233.33333333333334,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 7,
+      "packet_index": 17,
+      "send_ms": 233.33333333333334,
+      "size": 1228,
+      "arrival_ms": 233.33333333333334,
+      "reason": "ok"
+    },
+    {
+      "frame_id": 7,
+      "packet_index": 18,
+      "send_ms": 233.33333333333334,
+      "size": 66,
+      "arrival_ms": 233.33333333333334,
+      "reason": "ok"
+    }
+  ],
+  "kernel_qdisc": "[{\"kind\":\"htb\",\"handle\":\"1:\",\"root\":true,\"refcnt\":2,\"options\":{\"r2q\":10,\"default\":\"0x11\",\"direct_packets_stat\":0,\"direct_qlen\":1000},\"bytes\":37432,\"packets\":32,\"drops\":2,\"overlimits\":32,\"requeues\":0,\"backlog\":46999,\"qlen\":50},{\"kind\":\"netem\",\"handle\":\"10:\",\"parent\":\"1:11\",\"options\":{\"limit\":200,\"delay\":{\"delay\":0.2,\"jitter\":0.05,\"correlation\":0},\"loss-gemodel\":{\"p\":0.03,\"r\":0.4,\"1-h\":1,\"1-k\":0},\"duplicate\":{\"duplicate\":0.0005,\"correlation\":0},\"reorder\":{\"reorder\":0.002,\"correlation\":0.5},\"seed\":7425628671292336821,\"ecn\":false,\"gap\":1},\"bytes\":37432,\"packets\":32,\"drops\":2,\"overlimits\":0,\"requeues\":0,\"backlog\":46999,\"qlen\":50}]\n",
+  "testbed_profile": "congested",
+  "aiortc_version": "1.14.0",
+  "profile": {
+    "delay_ms": 0,
+    "jitter_ms": 0,
+    "loss_pct": 0,
+    "rate_mbit": null,
+    "limit_packets": null,
+    "deadline_ms": 200,
+    "burst_mean": 1,
+    "corrupt_pct": 0
+  },
+  "frames": [
+    {
+      "frame_id": 1,
+      "mask": "1011100100",
+      "psnr": 39.15087018098879,
+      "original_sha256": "e859af71f5d69250c4aca4c437bf3fe302d9e6b23a6d19c86fdce2001a4a0e2c",
+      "received_sha256": "0db1ea4ba3d2179a8608e34af243d64caee4f44035f77ebda0a3490f3433c416"
+    },
+    {
+      "frame_id": 2,
+      "mask": "1101111111",
+      "psnr": 32.02032629756319,
+      "original_sha256": "7fd7ad037c7e04885d0366a0715ee9b0a782ed43991a8a5d3b6a5e7199554d31",
+      "received_sha256": "ea4195aee7333c9ac0e0ca96cf536510163bf54cde0aac08dccbcebbf749bf93"
+    },
+    {
+      "frame_id": 3,
+      "mask": "1111111111",
+      "psnr": 29.602779413943825,
+      "original_sha256": "d3010ee5dc92ef26eb3e45ff44a3f3b8430efaed2e22d2d1d250843c4d5a64ca",
+      "received_sha256": "2cbbeef1249170a43854962fa5b19fba628470c70beb9ce23e15a0f05cb891f2"
+    },
+    {
+      "frame_id": 4,
+      "mask": "1111111111",
+      "psnr": 26.546915249196772,
+      "original_sha256": "790873c48572400bb4439a2fc3d317e8b3184c2fae4337610eda1156a19abd6d",
+      "received_sha256": "2cbbeef1249170a43854962fa5b19fba628470c70beb9ce23e15a0f05cb891f2"
+    },
+    {
+      "frame_id": 5,
+      "mask": "1111111111",
+      "psnr": 25.09755915056711,
+      "original_sha256": "34c4b5e61e10df45eda4ccc879c174a74a2251a95bc2d59ce5cac0f0485ac925",
+      "received_sha256": "2cbbeef1249170a43854962fa5b19fba628470c70beb9ce23e15a0f05cb891f2"
+    },
+    {
+      "frame_id": 6,
+      "mask": "1111111111",
+      "psnr": 24.302281871529104,
+      "original_sha256": "f9825dbad7c931896bd5c025869a32ae9e2c70edcbec486cc3e2d3c2ff2a8b91",
+      "received_sha256": "2cbbeef1249170a43854962fa5b19fba628470c70beb9ce23e15a0f05cb891f2"
+    },
+    {
+      "frame_id": 7,
+      "mask": "1111111111",
+      "psnr": 23.87261599792084,
+      "original_sha256": "7590a561d66a457fe458f3be5246909a6ba5a25f1a8a67a5023d184aa1178dff",
+      "received_sha256": "2cbbeef1249170a43854962fa5b19fba628470c70beb9ce23e15a0f05cb891f2"
+    }
+  ],
+  "rtp_received_at_drain": 32
+}

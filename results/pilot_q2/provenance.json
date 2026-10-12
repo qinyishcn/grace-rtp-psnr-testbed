@@ -1,0 +1,60 @@
+{
+  "manifest": {
+    "checkpoint_sha256": "cb10ab522ed1bcd74562d04bcffc1283d602cd585ceaf9708204bb5ddb041baa",
+    "q": 2.0,
+    "scale": 1.0,
+    "gop": 8,
+    "width": 256,
+    "height": 192,
+    "fps": 30,
+    "source_fps": 25.0,
+    "iframe_quality": 90,
+    "start_seconds": 10,
+    "sampling": "nearest native frame to target FPS at start_seconds",
+    "grace_commit": "14f1721663acd5d16ca776ce61b4a5860167d24d"
+  },
+  "profiles": {
+    "ideal": {},
+    "iid_1pct": {
+      "loss_pct": 1
+    },
+    "iid_5pct": {
+      "loss_pct": 5
+    },
+    "iid_10pct": {
+      "loss_pct": 10
+    },
+    "burst_5pct": {
+      "loss_pct": 5,
+      "burst_mean": 5
+    },
+    "delay_50": {
+      "delay_ms": 50
+    },
+    "delay_120": {
+      "delay_ms": 120
+    },
+    "jitter_30": {
+      "delay_ms": 60,
+      "jitter_ms": 30
+    },
+    "rate_1m": {
+      "rate_mbit": 1
+    },
+    "queue_5": {
+      "rate_mbit": 1,
+      "limit_packets": 5
+    },
+    "deadline_200": {
+      "delay_ms": 60,
+      "jitter_ms": 30,
+      "deadline_ms": 200
+    }
+  },
+  "seeds": 3,
+  "rows": 5544,
+  "transport": "aiortc RTP serialized bytes, virtual one-way FIFO; no retransmission",
+  "fixed_loss": null,
+  "seconds": 145.3156020641327,
+  "feature_observation_boundary": "Only arrivals no later than frame generation + deadline; final_capture_loss excluded from prediction"
+}

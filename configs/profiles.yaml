@@ -1,0 +1,13 @@
+# One-way sensitivity study. Testbed profiles are imported separately without silently changing them.
+profiles:
+  ideal: {}
+  iid_1pct: {loss_pct: 1}
+  iid_5pct: {loss_pct: 5}
+  iid_10pct: {loss_pct: 10}
+  burst_5pct: {loss_pct: 5, burst_mean: 5}
+  delay_50: {delay_ms: 50}
+  delay_120: {delay_ms: 120}
+  jitter_30: {delay_ms: 60, jitter_ms: 30}
+  rate_1m: {rate_mbit: 1}
+  queue_5: {rate_mbit: 1, limit_packets: 5}
+  deadline_200: {delay_ms: 60, jitter_ms: 30, deadline_ms: 200}

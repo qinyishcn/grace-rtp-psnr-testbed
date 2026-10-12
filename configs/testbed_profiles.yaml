@@ -1,0 +1,13 @@
+profiles:
+  lossy:
+    delay_ms: 0
+    jitter_ms: 0
+    limit_packets: null
+    loss_pct: 10.0
+    rate_mbit: null
+  no_emulation:
+    delay_ms: 0
+    jitter_ms: 0
+    limit_packets: null
+    loss_pct: 0.0
+    rate_mbit: null

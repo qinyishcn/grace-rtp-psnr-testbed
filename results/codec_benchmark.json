@@ -1,0 +1,29 @@
+{
+  "warmup": 5,
+  "samples": 20,
+  "resolution": [
+    256,
+    192
+  ],
+  "batch_size": 1,
+  "cuda_synchronized": true,
+  "scope": "Serial same-frame microbenchmark; CPU/GPU copies included; no network, capture, live input or end-to-end FPS claim",
+  "metrics": {
+    "encode_ms": {
+      "mean": 14.17251149994172,
+      "p95": 15.304142799880083
+    },
+    "decode_ms": {
+      "mean": 6.226022249995822,
+      "p95": 6.637284299893054
+    },
+    "entropy_encode_ms": {
+      "mean": 3.132182699994246,
+      "p95": 3.337175499962086
+    },
+    "entropy_decode_ms": {
+      "mean": 0.2516154999966602,
+      "p95": 0.26604884986909383
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "manifest": {
+    "checkpoint_sha256": "cb10ab522ed1bcd74562d04bcffc1283d602cd585ceaf9708204bb5ddb041baa",
+    "q": 1,
+    "scale": 1.0,
+    "gop": 8,
+    "width": 256,
+    "height": 192,
+    "fps": 30,
+    "source_fps": 25.0,
+    "iframe_quality": 90,
+    "start_seconds": 10,
+    "sampling": "nearest native frame to target FPS at start_seconds",
+    "grace_commit": "14f1721663acd5d16ca776ce61b4a5860167d24d"
+  },
+  "profiles": {
+    "controlled": {}
+  },
+  "seeds": 3,
+  "rows": 504,
+  "transport": "aiortc RTP serialized bytes, virtual one-way FIFO; no retransmission",
+  "fixed_loss": 0.2,
+  "seconds": 12.47943663597107
+}

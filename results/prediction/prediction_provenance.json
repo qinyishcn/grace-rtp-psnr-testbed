@@ -1,0 +1,72 @@
+{
+  "train_videos": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "validation_videos": [
+    9,
+    10
+  ],
+  "test_videos": [
+    11,
+    12
+  ],
+  "capture_features": [
+    "packet_count",
+    "wire_bytes",
+    "capture_loss",
+    "delay_mean",
+    "delay_p95",
+    "delay_std",
+    "iat_std",
+    "max_size",
+    "deadline_ms"
+  ],
+  "protocol_context": [
+    "frame_pos",
+    "q"
+  ],
+  "stage1": [
+    {
+      "split": "validation",
+      "loss_fraction_mae": 0.0055785036446984095,
+      "bit_accuracy": 0.9541125541125541,
+      "bit_brier": 0.03576818742229055,
+      "all_blocks_good_bit_accuracy": 0.7143398268398269,
+      "pattern_accuracy": 0.7581168831168831,
+      "note": "Fractional block probabilities are fed into stage 2; oracle uses exact masks"
+    },
+    {
+      "split": "test",
+      "loss_fraction_mae": 0.005821146666614562,
+      "bit_accuracy": 0.9561147186147186,
+      "bit_brier": 0.034584718611338466,
+      "all_blocks_good_bit_accuracy": 0.7187770562770562,
+      "pattern_accuracy": 0.7624458874458875,
+      "note": "Fractional block probabilities are fed into stage 2; oracle uses exact masks"
+    }
+  ],
+  "split_counts": {
+    "train": 7392,
+    "validation": 1848,
+    "test": 1848
+  },
+  "warning": "Paired synchronized endpoint captures and known playout deadline required. Upstream capture alone cannot identify downstream erasure. Test set has only two videos.",
+  "tta": "Not claimed: no runtime PSNR labels; minimizing own predictions does not establish quality improvement",
+  "latent_source_feedback": [
+    "mv_abs",
+    "mv_rms",
+    "res_abs",
+    "res_rms",
+    "mv_nonzero",
+    "res_nonzero"
+  ],
+  "study_status": "Exploratory pilot; held-out sources, no confirmatory generalization claim",
+  "observation_boundary": "frame deadline"
+}

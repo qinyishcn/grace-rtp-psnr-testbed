@@ -1,0 +1,13 @@
+run,profile,n,psnr,block_loss,sent,received,iframe_verified,full_feature_hash_matches
+aitestbed_netem_5qi_7,5qi_7,7,38.122202724626746,0.0,84,84,True,7
+aitestbed_netem_congested,congested,7,28.656192594529948,0.9142857142857144,84,33,True,0
+aitestbed_netem_lossy,lossy,7,37.51507566010524,0.1,84,77,True,3
+aitestbed_netem_no_emulation,no_emulation,7,38.122198432029066,0.0,84,84,True,7
+final_netem_5qi_7,5qi_7,7,38.12220250997091,0.0,84,84,True,7
+final_netem_congested,congested,7,30.02146383314653,0.8857142857142858,84,32,True,0
+final_netem_lossy,lossy,7,37.54154647731453,0.15714285714285717,84,73,True,1
+final_netem_no_emulation,no_emulation,7,38.122209627165496,0.0,84,84,True,7
+rtc_netem_5qi_7,5qi_7,7,38.12215180253727,0.0,84,84,True,7
+rtc_netem_congested,congested,7,29.850582689874006,0.9,84,33,True,0
+rtc_netem_lossy,lossy,7,37.632228377567344,0.07142857142857142,84,79,True,3
+rtc_netem_no_emulation,no_emulation,7,38.12222006444268,0.0,84,84,True,7
