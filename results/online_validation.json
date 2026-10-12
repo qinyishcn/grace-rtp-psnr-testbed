@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "held_out_frames": 3696,
+  "maximum_absolute_difference_db": 1.4210854715202004e-14,
+  "history_entries": 264,
+  "note": "One previous/current GOP state per stream; no future arrivals or labels used"
+}

@@ -8,6 +8,10 @@ import numpy as np
 class Predictor:
     def __init__(self,path):
         self.bundle=joblib.load(path);self.history={}
+        # A single frame gains little from per-call worker pools. Fixed tree order
+        # also avoids tiny parallel summation differences near stage-2 splits.
+        for key in ['stage1','stage2','source_feedback','latent_feedback']:
+            if key in self.bundle:self.bundle[key].n_jobs=1
 
     def predict(self,row,source_feedback=False):
         b=self.bundle

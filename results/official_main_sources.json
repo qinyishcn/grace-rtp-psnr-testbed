@@ -1,0 +1,55 @@
+{
+  "repository": "https://github.com/5G-MAG/6G-Testbed",
+  "commit": "7231ae8e5670b67564cf28d397c2820d9403ecdc",
+  "retrieval": "Official main Git blob hashes in sha256; runtime_file_sha256 records Windows checkout bytes. Only CRLF/LF conversion differs.",
+  "files": [
+    {
+      "path": "aitestbed/analysis/__init__.py",
+      "sha256": "9a0bcf822d3ed35adfab760da72c9c2eccfe3c8f15d8b8fe1724ffdff65efee6",
+      "runtime_file_sha256": "4dd6f5cd9b51f0ba778546871cbc3bbfc525fce28076b9fa0ac536427b0f5e5d",
+      "only_checkout_newline_conversion": true
+    },
+    {
+      "path": "aitestbed/analysis/logger.py",
+      "sha256": "459e1a26fee01a2e317255f9d1356e5dda3a4790c91e2678013654dfe530789d",
+      "runtime_file_sha256": "49180740a155994ff5924c1f11e7235e60ee5a67f3291719015407f8dbe34796",
+      "only_checkout_newline_conversion": true
+    },
+    {
+      "path": "aitestbed/configs/profiles.yaml",
+      "sha256": "85101a81f210518cf0489d51f441122192c37b037f2860da5352909c6a2573b2",
+      "runtime_file_sha256": "f9737cf37e0469ee127cc3331be6f96eedb8e3c8ad6477e2800f02d60663c511",
+      "only_checkout_newline_conversion": true
+    },
+    {
+      "path": "netemu/src/netemu/__init__.py",
+      "sha256": "e93b203e12d5a343392e40ae9a4e2c4c98b86c32d7e098b3c09d0dbffef0178b",
+      "runtime_file_sha256": "83e6a4d549e0bdd007acb110246c1069be12c32f6c75c03c19fa2b59cf2dddca",
+      "only_checkout_newline_conversion": true
+    },
+    {
+      "path": "netemu/src/netemu/emulator.py",
+      "sha256": "0a45366e147ac0dca72991bd828ce12bf9d645b10c295a18080c1ea5d4835169",
+      "runtime_file_sha256": "fb28fa06a292bec14c90576a96ae7f3b487267cba7dc229a3509cca09ccb188b",
+      "only_checkout_newline_conversion": true
+    },
+    {
+      "path": "netemu/src/netemu/profile.py",
+      "sha256": "9e058fb364d583e6b066637083a033ebad1de6db3d20ba2f32a81a16a8193848",
+      "runtime_file_sha256": "df355f6aa7ef45c50e9feb5a230f3e558df1c0b76afa29fdfeaf737339347b66",
+      "only_checkout_newline_conversion": true
+    },
+    {
+      "path": "netemu/src/netemu/exceptions.py",
+      "sha256": "75a4e598af7de1e68faaa29bd0cde8f8e2c6826c22242ca1febd0ef77749fb28",
+      "runtime_file_sha256": "5716707aef98a892f5eb56cdaeb84198e7f15df0b40d3a7775693fb3d8fbdb56",
+      "only_checkout_newline_conversion": true
+    },
+    {
+      "path": "aitestbed/requirements.txt",
+      "sha256": "100a194242c9bc895f5fd2100e7e7714cde20a192819c18021e7b48fd20b54c7",
+      "runtime_file_sha256": "599435ba11e7f27e64d8a4343bcfd78a9cc18042af4142107585d6437c4d5efe",
+      "only_checkout_newline_conversion": true
+    }
+  ]
+}

@@ -5,14 +5,16 @@
   "controlled_labels": 1008,
   "iframe_labels": 48,
   "max_ideal_clean_psnr_difference_db": 0.00039996289111599026,
-  "testbed_sqlite_rows": 56,
   "final_real_network_frames": 28,
-  "additional_diagnostic_network_frames": 56,
+  "additional_diagnostic_network_frames": 84,
   "psnr_definition": "RGB [0,1] full-frame MSE; -10 log10(MSE); no clipping of output score",
   "source_split": "videos 1-8 train, 9-10 validation, 11-12 test",
   "notes": [
     "CUDA numerical differences tolerated to .002 dB",
     "Real RTC endpoints co-hosted; offline neural decode after transport",
     "Source metadata feedback models are separate from paired-capture models"
-  ]
+  ],
+  "official_testbed_sqlite_rows": 28,
+  "legacy_testbed_sqlite_rows": 56,
+  "official_testbed_commit": "7231ae8e5670b67564cf28d397c2820d9403ecdc"
 }

@@ -38,7 +38,7 @@ GOP 内固定丢块率适合受控标定，不能消除时序组合，也不能�
 
 RTP 本身不保证可靠交付，也不自动重传。[RTP](https://www.rfc-editor.org/rfc/rfc3550.html)。重传需结合反馈和发送端实现；NACK 定义见 [RFC 4585](https://www.rfc-editor.org/rfc/rfc4585.html)。
 
-已核对的本地 Testbed 基线 commit 是 `8581bf4974ccb35a6cc14791caebe7fcae4a0502`，aiortc 分支报告版本 1.14.0：
+已核对的此前会话本地 Testbed fork 基线 commit 是 `8581bf4974ccb35a6cc14791caebe7fcae4a0502`，aiortc 分支报告版本 1.14.0。这一部分不是对官方 main 默认实现的描述：
 
 - `codecs/__init__.py` 的 add_video_codec 为视频注册 nack、nack pli 及 RTX codec；包含 tokenId 系列。
 - `rtcrtpreceiver.py` 视频分支建立 NackGenerator，序列缺口触发 `_send_rtcp_nack`；不能据“UDP”断言不会重传。
@@ -47,6 +47,8 @@ RTP 本身不保证可靠交付，也不自动重传。[RTP](https://www.rfc-edi
 - 新的 GRACE 接收器绕过这些整帧逻辑，按明确的 frame generation time + deadline 接收完整块；不发送 NACK，不启用 RTX，也不使用自动 PLI。I 帧为独立保证交付路径。真实 SRTP 通路使用 aiortc 的 ICE、DTLS、SRTP，并通过少量私有 transport 接口接入自定义收包器，需锁版本回归验证。
 
 首批实验关闭重传以隔离神经容错。后续应增加有期限的 NACK/RTX 对照，记录原始丢失、重传数、重传成功且及时率、最终坏块率、开销和尾时延。自动 PLI 引起额外 I 帧会改变研究条件，也需独立开关。
+
+最终另外验证了用户指定的官方 `5G-MAG/6G-Testbed/main`，固定 commit `7231ae8e5670b67564cf28d397c2820d9403ecdc`。该分支没有捆绑上述本地 aiortc fork，使用普通 aiortc 1.14.0。普通版本的 `_retransmit` 在协商 RTX 时包装 RTX；未协商 RTX 时仍可发送历史原 RTP 包，这与本地 fork 的缩进限制不同。普通 jitter buffer 不含 token 跳缺槽分支。GRACE 新接收器在两种运行时都独立按截止时间收块，不依赖这些默认门槛，也不产生 NACK。最终官方四 profile、日志和真实 SRTP 接入已运行，源码哈希与结果另存 `official_main_sources.json`、`official_netem_*.json`，旧 fork 数据仅作诊断保留。
 
 ## 网络参数如何影响 PSNR
 

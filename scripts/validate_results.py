@@ -20,10 +20,13 @@ for metric in csv.DictReader((root/'prediction/prediction_metrics.csv').open(new
 p=json.loads((root/'prediction/prediction_provenance.json').read_text())
 assert not set(p['train_videos'])&set(p['test_videos'])
 assert not set(p['validation_videos'])&set(p['test_videos'])
-for profile in ['no_emulation','lossy','5qi_7','congested']:
- e=json.loads((root/f'final_netem_{profile}.json').read_text())
- assert e['iframe_verified'] and len(e['received_layout'])==7
- assert e['rtp_received']==len(e['events'])
- if profile=='no_emulation':assert all(r['original_sha256']==r['received_sha256'] for r in e['frames'])
+for prefix,profiles in [('official_netem',['no_emulation','5g_urban','5qi_7','congested']),
+                        ('final_netem',['no_emulation','lossy','5qi_7','congested'])]:
+ for profile in profiles:
+  e=json.loads((root/f'{prefix}_{profile}.json').read_text())
+  assert e['iframe_verified'] and len(e['received_layout'])==7
+  assert e['rtp_received']==len(e['events'])
+  if profile=='no_emulation':assert all(r['original_sha256']==r['received_sha256'] for r in e['frames'])
+assert json.loads((root/'rtp_bytes_legacy.json').read_text())['rtp_byte_stream_sha256']==json.loads((root/'rtp_bytes_official.json').read_text())['rtp_byte_stream_sha256']
 assert all(r['capture_application_sequence_sets_equal'] for r in json.loads((root/'pcap_audit.json').read_text()))
 print('PASS: 12096 labels, masks, causal profile behavior, source split, independently recomputed prediction metrics, real SRTP evidence')

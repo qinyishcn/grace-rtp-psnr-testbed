@@ -1,0 +1,43 @@
+{
+  "python": "3.12.13",
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+  "torch": "2.4.1+cu121",
+  "torchvision": "0.19.1+cu121",
+  "aiortc": "1.14.0",
+  "av": "16.1.0",
+  "numpy": "1.26.4",
+  "cuda": "12.1",
+  "gpu": "NVIDIA GeForce RTX 3070",
+  "modules": [
+    {
+      "module": "aiortc.rtcrtpsender",
+      "filename": "rtcrtpsender.py",
+      "sha256": "6bad8e166043d1f5b08f5de6034034121380faf7ee7c45681102c3547adf064c"
+    },
+    {
+      "module": "aiortc.rtcrtpreceiver",
+      "filename": "rtcrtpreceiver.py",
+      "sha256": "580dc98ee2fc2066ddece49c9948aee6b7e4911440c1691fe38bfd948085e151"
+    },
+    {
+      "module": "aiortc.jitterbuffer",
+      "filename": "jitterbuffer.py",
+      "sha256": "37a7b7a4f7f78637984208a033ea09ebedbfbcb0967c49d6950eb0db02d964f0"
+    },
+    {
+      "module": "aiortc.rtcdtlstransport",
+      "filename": "rtcdtlstransport.py",
+      "sha256": "af315bbdf74e6d3228dbd7959e1341c54921469955d0f2eaa8b7973c02cad805"
+    },
+    {
+      "module": "aiortc.codecs",
+      "filename": "__init__.py",
+      "sha256": "eacb2a78011b79727421c946a27aa1ad6528736ffc7d5c86354a90cdfe9555b7"
+    },
+    {
+      "module": "netemu",
+      "filename": "__init__.py",
+      "sha256": "83e6a4d549e0bdd007acb110246c1069be12c32f6c75c03c19fa2b59cf2dddca"
+    }
+  ]
+}

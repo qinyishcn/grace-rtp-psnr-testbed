@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "grace-rtp-testbed"
 version = "0.1.0"
 requires-python = ">=3.10"
-dependencies = ["numpy", "aiortc>=1.9,<2", "Pillow", "PyYAML", "scikit-learn", "av", "matplotlib"]
+dependencies = ["numpy", "aiortc==1.14.0", "Pillow", "PyYAML", "scikit-learn", "av", "matplotlib"]
 
 [tool.setuptools.packages.find]
 include = ["grace_rtp*"]

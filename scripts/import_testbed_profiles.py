@@ -4,7 +4,9 @@ from pathlib import Path
 import yaml
 p=argparse.ArgumentParser();p.add_argument("source");p.add_argument("output");a=p.parse_args()
 raw=Path(a.source).read_bytes();src=yaml.safe_load(raw)["profiles"];dst={};unsupported={}
-for name in ["no_emulation","lossy","5qi_7","congested"]:
+for name in ["no_emulation","5g_urban","lossy","5qi_7","congested"]:
+ if name not in src:
+  unsupported[name]=["not present in this upstream configuration"];continue
  c=src[name]; reasons=[]
  for field in ["loss_correlation_pct","reorder_pct","duplicate_pct"]:
   if c.get(field,0):reasons.append(field)

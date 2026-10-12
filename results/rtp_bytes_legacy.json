@@ -1,0 +1,7 @@
+{
+  "aiortc_version": "1.14.0",
+  "frames": 336,
+  "packets": 5410,
+  "rtp_byte_stream_sha256": "2bbd6b9cfedf490435297ce2fbbfa6ba61ef7203b3830d993141e44c60a9649a",
+  "scope": "All 336 cached P frames; length-delimited serialized RTP bytes before virtual network impairment"
+}

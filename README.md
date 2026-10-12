@@ -22,7 +22,7 @@ git clone https://github.com/UChi-JCL/Grace assets/Grace
 git -C assets/Grace checkout 14f1721663acd5d16ca776ce61b4a5860167d24d
 python scripts/fetch_selected_models.py --output-root assets/Grace/models
 git clone https://github.com/5G-MAG/6G-Testbed assets/6G-Testbed
-git -C assets/6G-Testbed checkout 8581bf4974ccb35a6cc14791caebe7fcae4a0502
+git -C assets/6G-Testbed checkout 7231ae8e5670b67564cf28d397c2820d9403ecdc
 ```
 
 权重下载器读取官方公开 Google Drive tar 的 Range 元数据，下载两个 checkpoint 和光流初始化数组；每次 Range 检查返回范围和长度，最多三次网络重试。最终使用的 4096 模型 SHA-256 为 `cb10ab522ed1bcd74562d04bcffc1283d602cd585ceaf9708204bb5ddb041baa`。模型初始化后逐参数核对实际加载权重，禁止静默缺键形成随机模型。
@@ -57,7 +57,9 @@ python scripts/summarize.py
 
 ## 原版 AITestbed 真实网络通路
 
-先安装 Testbed 的 `netemu` 和 aiortc fork；新建环境时避免与已运行项目共享依赖。真实接入采用 `grace_rtp.testbed.GraceScenario`、原 `TrafficLogger` 及原 `NetworkEmulator`，无需 LLM 服务。它是独立扩展 runner，没有自动改写上游 orchestrator 的 scenario registry。
+官方 main 固定为 `7231ae8e5670b67564cf28d397c2820d9403ecdc`，原始组件哈希见 `results/official_main_sources.json`。此前会话的本地 fork 诊断单独保留，官方 main 不包含那个 aiortc fork。
+
+先安装官方 Testbed 的 `netemu` 与普通 aiortc 1.14.0；新建环境时避免与已运行项目共享依赖。真实接入采用 `grace_rtp.testbed.GraceScenario`、原 `TrafficLogger` 及原 `NetworkEmulator`，无需 LLM 服务。它是独立扩展 runner，没有自动改写上游 orchestrator 的 scenario registry。
 
 ```bash
 export TESTBED_ROOT=/absolute/path/to/6G-Testbed
@@ -66,7 +68,7 @@ sudo -E bash scripts/run_isolated_netem.sh
 python scripts/audit_pcap.py
 ```
 
-脚本创建独立 network namespace，仅在其中的 lo 上应用四种原始 profile，I 帧和完整布局通过可靠 DataChannel 在扰动前交付。自定义收端不发 NACK/RTX，按可靠布局指定的帧截止时间接收完整块；神经解码随后离线进行。namespace 内 ICE 主机候选限制为 127.0.0.1，不触及宿主网卡。退出清理命名空间及抓包进程。
+脚本创建独立 network namespace，仅在其中的 lo 上应用 no_emulation、5g_urban、5qi_7、congested 四种官方原始 profile，I 帧和完整布局通过可靠 DataChannel 在扰动前交付。自定义收端不发 NACK/RTX，按可靠布局指定的帧截止时间接收完整块；神经解码随后离线进行。namespace 内 ICE 主机候选限制为 127.0.0.1，不触及宿主网卡。退出清理命名空间及抓包进程。
 
 原始 PCAP、SQLite 留在本机；公开 RTP 基本包头、tc 状态、完整块掩码及特征哈希。`rtc.py` 也提供无 kernel netem 的真实 SRTP/虚拟调度诊断入口。使用 aiortc 私有 DTLS 接口，升级版本必须重新测试。
 
@@ -74,9 +76,12 @@ python scripts/audit_pcap.py
 
 ```bash
 python -m unittest discover -s tests -v
+python scripts/validate_results.py
+# 重新训练预测模型后，可核对全部留出帧的状态式推理：
+python -m scripts.validate_online
 python -m scripts.benchmark --grace assets/Grace --checkpoint assets/Grace/models/grace/4096_freeze.model
 ```
 
-Testbed fork 下本地 15 项检查通过；普通 aiortc 下四项 fork 行为检查会明确跳过，其余传输与真实 SRTP 检查仍运行。预测仅用帧截止前可见包；`final_capture_loss`、真实掩码、PSNR 和 profile 名称均不作为网络输入。配对抓包模型需要同步的收发观测和已知协议时限/GOP/质量配置；SI/TI 与 latent 统计增强模型需要显式源侧反馈。纯上游抓包模型另作基线。权重哈希、源身份、逐帧缺块与不理想结果均保留。
+Testbed fork 下本地 15 项检查通过；普通 aiortc 下 14 项通过，仅一项 fork 独有 token 分支检查跳过；默认 jitter buffer、NACK 与真实 SRTP 均有运行验证。预测仅用帧截止前可见包；`final_capture_loss`、真实掩码、PSNR 和 profile 名称均不作为网络输入。配对抓包模型需要同步的收发观测和已知协议时限/GOP/质量配置；SI/TI 与 latent 统计增强模型需要显式源侧反馈。纯上游抓包模型另作基线。权重哈希、源身份、逐帧缺块与不理想结果均保留。
 
 The Software used in this research was created by Yihua Cheng of UChicago. © 2023 UChicago. Original implementation files in this repository use MIT; external dependencies retain their respective licenses.

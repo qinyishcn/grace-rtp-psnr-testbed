@@ -12,17 +12,17 @@
     {
       "module": "aiortc.rtcrtpsender",
       "filename": "rtcrtpsender.py",
-      "sha256": "6bad8e166043d1f5b08f5de6034034121380faf7ee7c45681102c3547adf064c"
+      "sha256": "f90cef75d1f58cbe415ff4329e340bf1425ca8664020e4cb83cb45f06c33c36b"
     },
     {
       "module": "aiortc.rtcrtpreceiver",
       "filename": "rtcrtpreceiver.py",
-      "sha256": "580dc98ee2fc2066ddece49c9948aee6b7e4911440c1691fe38bfd948085e151"
+      "sha256": "49f8007bfcf070d619b26d4c1a42679af70cf6b4f676de4f82f9a45b36fe2edd"
     },
     {
       "module": "aiortc.jitterbuffer",
       "filename": "jitterbuffer.py",
-      "sha256": "37a7b7a4f7f78637984208a033ea09ebedbfbcb0967c49d6950eb0db02d964f0"
+      "sha256": "34d9dafc538aabbcc85e5a78b511d125c50197aff25b69c4c263110a40161238"
     },
     {
       "module": "aiortc.rtcdtlstransport",
@@ -32,7 +32,7 @@
     {
       "module": "aiortc.codecs",
       "filename": "__init__.py",
-      "sha256": "eacb2a78011b79727421c946a27aa1ad6528736ffc7d5c86354a90cdfe9555b7"
+      "sha256": "a064a824377571bcb6669dc7b89185da79bf0b961a13bffcc8a64900bb4b99a8"
     },
     {
       "module": "netemu",

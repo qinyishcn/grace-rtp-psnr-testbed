@@ -7,6 +7,10 @@ final_netem_5qi_7,5qi_7,7,38.12220250997091,0.0,84,84,True,7
 final_netem_congested,congested,7,30.02146383314653,0.8857142857142858,84,32,True,0
 final_netem_lossy,lossy,7,37.54154647731453,0.15714285714285717,84,73,True,1
 final_netem_no_emulation,no_emulation,7,38.122209627165496,0.0,84,84,True,7
+official_netem_5g_urban,5g_urban,7,38.12222014795066,0.0,84,84,True,7
+official_netem_5qi_7,5qi_7,7,38.1222027102045,0.0,84,84,True,7
+official_netem_congested,congested,7,28.230969684862753,0.9,84,32,True,0
+official_netem_no_emulation,no_emulation,7,38.122193349614115,0.0,84,84,True,7
 rtc_netem_5qi_7,5qi_7,7,38.12215180253727,0.0,84,84,True,7
 rtc_netem_congested,congested,7,29.850582689874006,0.9,84,33,True,0
 rtc_netem_lossy,lossy,7,37.632228377567344,0.07142857142857142,84,79,True,3

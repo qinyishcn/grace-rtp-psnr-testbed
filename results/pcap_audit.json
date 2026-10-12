@@ -88,6 +88,50 @@
     "application_without_capture": 0
   },
   {
+    "run": "official_netem_5g_urban",
+    "pcap_sha256": "257a12044d70ba7c905749cf094a7babfe9fbb260f77d1f39eeac4df635c2e31",
+    "captured_media": 84,
+    "application_received": 84,
+    "scheduled_media": 84,
+    "repeated_sequences": 0,
+    "capture_application_sequence_sets_equal": true,
+    "captured_but_not_application": 0,
+    "application_without_capture": 0
+  },
+  {
+    "run": "official_netem_5qi_7",
+    "pcap_sha256": "f7441d8dff9df37ef8bfbf3417f13b4dbeea1b406764979c54a3bc1c5757a541",
+    "captured_media": 84,
+    "application_received": 84,
+    "scheduled_media": 84,
+    "repeated_sequences": 0,
+    "capture_application_sequence_sets_equal": true,
+    "captured_but_not_application": 0,
+    "application_without_capture": 0
+  },
+  {
+    "run": "official_netem_congested",
+    "pcap_sha256": "149ad58594c61e3ac1811e45f4509e0a3f0105f8884f3da5392310f99dbf8e46",
+    "captured_media": 32,
+    "application_received": 32,
+    "scheduled_media": 84,
+    "repeated_sequences": 0,
+    "capture_application_sequence_sets_equal": true,
+    "captured_but_not_application": 0,
+    "application_without_capture": 0
+  },
+  {
+    "run": "official_netem_no_emulation",
+    "pcap_sha256": "d4ee933579c46480253d38c68465afa256bb190adc99209bf4edeca21a87684a",
+    "captured_media": 84,
+    "application_received": 84,
+    "scheduled_media": 84,
+    "repeated_sequences": 0,
+    "capture_application_sequence_sets_equal": true,
+    "captured_but_not_application": 0,
+    "application_without_capture": 0
+  },
+  {
     "run": "rtc_netem_5qi_7",
     "pcap_sha256": "96f39576167bdc087dbbcbf1a49ba006159b60a30c2c8fa4d56830e0be2c7e6b",
     "captured_media": 84,
